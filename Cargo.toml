@@ -1,0 +1,20 @@
+[package]
+name = "console-via-uds"
+version = "0.1.0"
+authors = ["Takashi IIGUNI <iiguni.tks@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = "2.33.3"
+anyhow = "1.0.32"
+libc = "0.2.76"
+nix = "0.18.0"
+
+
+[[bin]]
+name = "console_server"
+
+[[bin]]
+name = "console_client"
